@@ -11,14 +11,12 @@ namespace MyProject.DAL
     {
         protected override void Seed(ParseContext context)
         {
-           //Проверка на работоспособность бд
-          /*  var parsedPost = new List<ParsedPost>
-            {
-                new ParsedPost { ID = 0, ParseDate = null, PostBody = "", PostDate = null, Topic = ""}
-            };
-            parsedPost.ForEach(s => context.ParsedPosts.Add(s));
+
+            var user = new User() { Username = "admin", Password = "pswd", IsActive = true, UserId = 1 };
+            
+            context.Users.Add(user);
             context.SaveChanges();
-            */
+            
         }
     }
 }

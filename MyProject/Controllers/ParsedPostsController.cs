@@ -14,6 +14,7 @@ using MyProject.Services;
 
 namespace MyProject.Controllers
 {
+    [Authorize]
     public class ParsedPostsController : ApiController
     {
         private ParseContext db = new ParseContext();

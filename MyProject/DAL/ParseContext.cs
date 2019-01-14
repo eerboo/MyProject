@@ -7,16 +7,22 @@ namespace MyProject.DAL
     public class ParseContext : DbContext
     {
 
-        public ParseContext() : base("SchoolContext")
+        public ParseContext() : base("MyContext")
         {
         }
 
         public DbSet<ParsedPost> ParsedPosts { get; set; }
-      //  public DbSet<WebSite> WebSites { get; set; }        
+        public DbSet<User> Users { get; set; }      
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();           
         }
+
+      
+
+    
+
+        
     }
 }

@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 
 namespace MyProject.Controllers
 {
+    [Authorize]
     public class ParsePostsController : ApiController
     {
+        
         ParserService parse = new ParserService();
         // GET api/ParsePosts
         //[ResponseType(typeof(void))]

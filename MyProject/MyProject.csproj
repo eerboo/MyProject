@@ -170,17 +170,21 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Authentication\CustomMembership.cs" />
+    <Compile Include="Authentication\CustomMembershipUser.cs" />
+    <Compile Include="Authentication\CustomPrincipal.cs" />
+    <Compile Include="Controllers\AuthorisationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ParsedPostsController.cs" />
     <Compile Include="Controllers\ParsePostsController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAL\ParseContext.cs" />
     <Compile Include="DAL\ParseInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomSerializeModel.cs" />
     <Compile Include="Models\ParsedPost.cs" />
-    <Compile Include="Models\WebSite.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ParserService.cs" />
     <Compile Include="Services\PostsService.cs" />
